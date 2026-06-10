@@ -49,20 +49,7 @@
     --text-color: #FFF;
     --main-color: #a54bff;
 }
-/* :root { */
-    /* --bg-color: #181824;    Dark background color */
-    /* --second-bg-color: #150814;/ Secondary dark background color */
-    /* --text-color: #B97CF7;  Purple text color similar to ChatGPT */
-    /* --main-color: #EE92D7;  Main accent color */
-/* } */
 
-/* :root{
-    --bg-color: #081b29;
-    --second-bg-color: #112e42;
-    --text-color: #ededed;
-    --main-color: #00abf0;
-
-} */
 
 html{
      font-size: 62.5%;
@@ -111,9 +98,8 @@ noscript{
     z-index:999999;
 }
 .preloader img {
-    width: 5vh; /* Adjust the width and height to match your GIF's dimensions */
+    width: 5vh; 
 }
-/* The switch - the box around the speaker*/
 .toggleSwitch {
     width: 30px;
     height: 30px;
@@ -121,7 +107,6 @@ noscript{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: rgb(39, 39, 39); */
     border-radius: 50%;
     cursor: pointer;
     transition-duration: .3s;
@@ -129,7 +114,6 @@ noscript{
     overflow: hidden;
   }
   
-  /* Hide default HTML checkbox */
   #checkboxInput {
     display: none;
   }
@@ -200,7 +184,7 @@ noscript{
 .header.sticky {
     position: fixed;
     top: 0;
-    background: var(--bg-color); /* Change to your desired background color */
+    background: var(--bg-color);
 }
 
 
@@ -224,7 +208,6 @@ noscript{
     margin-left:3.5rem ;
     transition: .3s;
     cursor: url('click.png')10 12,move;
-
 
 }
 .navbar a:hover,
@@ -305,9 +288,6 @@ section{
 .home-content h1 span{
     color: var(--text-color);
 }
-/* .home-content p{
-    color: aliceblue;
-} */
 
 .home-content .text-animate{
     position: relative;
@@ -370,7 +350,7 @@ section{
     align-items: center;
     text-align: center;
 
-    width: 22rem; /* aumenta a largura */
+    width: 22rem;
     height: 100%;
 
     background: var(--main-color);
@@ -385,7 +365,6 @@ section{
 }
 .btn-box .btn:hover{
     color: var(--main-color);
-    /* cursor: url('click.png')10 12,move; */
 }
 .btn-box .btn:nth-child(2){
     background: transparent;
@@ -417,11 +396,8 @@ color: var(--bg-color);
 }
 
 .home-sci{
-    position: absolute;
-    bottom: 4rem;
-    width: 100px;
     display: flex;
-    justify-content: space-between;
+    margin-top: 2.5rem;
     gap: 1.2rem;
 }
 .home-sci a.whatsapp{
@@ -973,11 +949,6 @@ span{
         text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
         margin-right: 10px;
     }
-    /* 50%{
-        color: white;
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
-        margin-right: 10px;
-    } */
     100%{
         text-shadow: 0 0 10px #ffffff00, 0 0 20px #ffffff00, 0 0 40px #ffffff00;
     }
@@ -1006,8 +977,6 @@ span{
     justify-content: center;
     align-items: center;
     padding: .8rem;
-    /* background: var(--main-color); */
-    /* border: .2rem solid var(--main-color); */
     border-radius: .6rem;
     z-index: 1;
     overflow: hidden;
@@ -1048,9 +1017,6 @@ span{
     background:var(--bg-color);
     z-index: 98;
 }
-/* .animate.home-img{ 
-    width: 50%;
-} */
 
 .logo .animate,
 .navbar .animate,
@@ -1302,7 +1268,6 @@ section:nth-child(odd) .animate.scroll{
     }
     
 }
-/* keyframes animation */
 
 @keyframes homeBgText {
     0%,10%,100%{
