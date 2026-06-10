@@ -184,7 +184,7 @@ noscript{
 .header.sticky {
     position: fixed;
     top: 0;
-    background: var(--bg-color);
+    background: var(--bg-color); 
 }
 
 
@@ -208,6 +208,7 @@ noscript{
     margin-left:3.5rem ;
     transition: .3s;
     cursor: url('click.png')10 12,move;
+
 
 }
 .navbar a:hover,
@@ -234,7 +235,6 @@ section{
     justify-content: space-between;
     padding: 0 8%;
     gap: 4rem;
-    /* foto removida do background — agora é elemento <img> */
 }
 .home-img-wrapper {
     position: relative;
@@ -852,6 +852,7 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .footer-blob{
@@ -867,10 +868,28 @@ span{
 }
 
 .footer-foreground{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 4rem 2rem;
+    padding: 0 2rem;
+    pointer-events: none;
+}
+
+.footer-quote{
+    text-align: center;
+    width: 100%;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 0;
 }
 
 .footer-quote{
@@ -949,6 +968,7 @@ span{
         text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
         margin-right: 10px;
     }
+   
     100%{
         text-shadow: 0 0 10px #ffffff00, 0 0 20px #ffffff00, 0 0 40px #ffffff00;
     }
@@ -1007,7 +1027,6 @@ span{
 .rocketIcon{
     height: 100%;
 }
-/* Animation reload and scroll */
 .animate{
     position: absolute;
     top: 0;
@@ -1016,14 +1035,6 @@ span{
     height: 100%;
     background:var(--bg-color);
     z-index: 98;
-}
-
-.logo .animate,
-.navbar .animate,
-#menu-icon .animate,
-.home.show-animate .animate{
-    animation: showRight 1s ease forwards;
-    animation-delay: calc(.3s*var(--i));
 }
 
 .animate.scroll{
@@ -1042,7 +1053,6 @@ section:nth-child(odd) .animate.scroll{
     width: 0;
 }
 
-/*BREAKPOINTS*/
 @media(max-width:1200px){
     html{
         font-size: 55%;
@@ -1130,7 +1140,6 @@ section:nth-child(odd) .animate.scroll{
         transition-delay:.25s ;
     }
 
-    /* Hero: empilha verticalmente no mobile */
     .home{
         flex-direction: column-reverse;
         justify-content: center;
@@ -1302,9 +1311,14 @@ section:nth-child(odd) .animate.scroll{
         width:0;
     }
 }
+.logo .animate,
+.navbar .animate,
+#menu-icon .animate,
+.home.show-animate .animate{
+    animation: showRight 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
 
-
-/* height media query */
 
 @media(max-height:740px){
 
@@ -1326,7 +1340,6 @@ section:nth-child(odd) .animate.scroll{
     }
 }
 
-/* ===== FIX: navbar e logo visíveis no desktop ===== */
 .navbar{
     display: flex;
 }
